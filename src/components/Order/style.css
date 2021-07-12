@@ -1,0 +1,113 @@
+.order >h1{
+    font-size: 48px;
+    line-height: 100%;  
+    text-align: center;    
+    color: #1E0801;
+}
+.order >p{
+    font-size: 30px;
+line-height: 35px;
+text-align: center;
+color: #1E0801;
+}
+.order-content{
+    display: flex;
+    background-color: var(--color-black);
+    margin: 55px 150px;
+}
+.order-content .left-contents{
+    padding: 77px 33px 66px 90px;
+    width: 50%;
+}
+.order-content .left-contents h2{
+    font-size: 36px;
+line-height: 139%;
+}
+.order-content .left-contents p{
+    font-size: 24px;
+line-height: 139%;
+margin-top: 19px;
+color: white;
+}
+.order-content .left-contents button{
+    margin-top: 80px;
+}
+
+.order-content .right-contents{
+    background-image: url("../../assets/images/vidIMG.png");
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.order-content .right-contents video{
+    width: 100%;
+}
+
+
+
+    @media (max-width: 1175px){
+        .order-content .left-contents h2 {
+            font-size: 26px;
+            line-height: 100%;
+        }
+        .order-content .left-contents p {
+            font-size: 16px;
+            line-height: 136%;
+        }
+    }
+    @media(max-width: 776px) {
+        .order-content {
+            margin: 32px 20px;
+            flex-direction: column;
+        }
+        .order-content .left-contents{
+            width:auto;
+            padding: 27px 33px 14px 33px;
+        }
+        .order-content .left-contents button {
+            margin: 30px auto;
+            display: block;
+        }
+        .left-contents >h2, .left-contents p{
+            text-align: center;
+        }
+      
+        
+    }
+
+    @media(max-width: 576px) {
+        .order >h1 {
+            font-size: 34px;
+            line-height: 92%;
+        }
+        .order >p {
+            font-size: 26px;
+            line-height: 25px;
+        }
+        .order-content {
+            margin: 25px 20px !important;
+        }
+        .order-content .right-contents{
+            padding: 0;
+        }
+    }
+    @media(max-width: 380px) {
+        .order-content .left-contents h2 {
+            font-size: 20px;
+            line-height: 98%;
+        }
+        .order-content .left-contents p {
+            font-size: 14px;
+            line-height: 128%;
+            margin-top: 12px;
+        }
+        .order >h1 {
+            font-size: 21px;
+            line-height: 98%;
+        }
+        .order >p {
+            font-size: 16px;
+            line-height: 21px;
+        }
+    }

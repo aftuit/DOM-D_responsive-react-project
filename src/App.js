@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
+import Header from './components/Header';
+import Homes from './components/Homes';
+import Order from './components/Order';
+import Content from './components/Content';
+import Room from './components/Room';
+import Create from './components/CreateHouse';
+import Must from './components/Must';
+import Partners from './components/Partners';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <Header />
+                        
+            <Homes />
+            
+            <Order />
+            
+            <Content />
+            
+            <Room />
+            
+            <Create />
+            
+            <Must />
+            
+            <Partners />
+            
+            <Contact />
+            
+            <Footer />
+        </div>
+    )
 }
 
 export default App;

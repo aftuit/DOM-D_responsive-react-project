@@ -1,0 +1,508 @@
+.container {
+    position: relative;
+    padding: 28px 150px 31px 34px;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-black);
+    justify-content: space-between;
+}
+.container .up-to-arrow{
+    position: fixed;
+    bottom: 100px;
+    right: 40px;
+    z-index: 20;
+}
+
+img[alt*=burger] {
+    cursor: pointer;
+    margin-right: 11px;
+    position: relative;
+}
+
+
+.logo-wrapper {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+
+.logo-wrapper .itm {
+    margin-left: 21px;
+}
+
+.local-net {
+    color: white;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    color: white;
+}
+.buttons a{
+    display: none;
+}
+
+.buttons button {
+    width: 140px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.22);
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    margin: 12px 7px 0 7px;
+}
+
+.buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.28);
+}
+
+.buttons button:active {
+    background-color: rgba(255, 255, 255, 0.34);
+}
+
+.buttons span {
+    margin-left: 12px;
+}
+
+.call {
+    color: white;
+}
+
+.call-number {
+    display: flex;
+    align-items: center;
+}
+
+.call-number span {
+    margin-left: 8px;
+}
+
+.call button {
+    box-shadow: 0px 0px 48px rgba(240, 192, 92, 0.54);
+    font-size: 16px;
+    margin-top: 8px;
+    text-align: center;
+    padding: 11px 31px 14px 31px;
+}
+
+
+
+.wrapper{
+    background-image: linear-gradient(200.02deg, rgba(18, 5, 1, 0.7) 22.86%, rgba(30, 8, 1, 0.07) 44.88%, rgba(11, 10, 9, 0.31) 75.31%), url("../../assets/images/maskimg.png");
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 150px;
+}
+.left-content h1{
+    font-size: 60px;
+    line-height: 100%;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 28.5972px #000000;
+    /* display: none; */
+}
+.left-content{
+    width: 60%;
+}
+.left-content >button{
+    display: none;
+}
+.left-content p{
+    font-size: 42px;
+line-height: 49px;
+color: #FFFFFF;
+text-shadow: 0px 0px 28.5972px #000000;
+margin-top: 11px;
+}
+.left-content >span{
+    font-size: 24px;
+line-height: 28px;
+color: #FFFFFF;
+text-shadow: 0px 0px 25px #000000;
+margin-top: 11px;
+display: block;
+}
+.left-content .suggestions{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.suggestions .sugg--work{
+    cursor: pointer;
+    font-size: 16px;
+    width: 160px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.71);
+    margin: 9px 10px;
+}
+
+.right-content{
+    width: 30%;
+    text-align: center;
+    padding: 45px 12px;
+    background: rgba(255, 255, 255, 0.71);
+box-shadow: 0px 0px 74px rgba(39, 17, 10, 0.16);
+}
+.right-content h1{
+    font-size: 32px;
+line-height: 37px;
+}
+.right-content p{
+    font-size: 18px;
+line-height: 21px;
+margin-top: 15px;
+}
+.right-content img{
+    margin-top: 32px;
+}
+.right-content button{
+    display: block;
+    margin: 23px auto 0 auto;
+    padding: 12px 35px;
+}
+
+.card-box{
+    background: rgba(255, 255, 255, 0.77);
+    backdrop-filter: blur(10px);
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.2s;
+}
+.card-box .box-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+}
+.box-top img{
+    cursor: pointer;
+}
+.box-top p{
+    font-size: 50px;
+    margin-bottom: 0;
+    color: var(--color-black);
+}
+.card-box .steps{
+    margin: 50px 88px;
+}
+.card-box .steps h5{
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.card-box ul{
+    margin-left: 20px;
+}
+.card-box ul li{
+    line-height: 23px;
+    list-style-type: none;
+}
+.card-box ul li a{
+    font-size: 20px;
+    line-height: 23px;
+    color: rgba(0,0,0,0.5);
+    text-decoration: none;
+}
+.card-box ul li a:hover{
+    color: var(--color-main);
+}
+.steps .step-1, .step-2, .step-3, .step-4, .step-5{
+    position: relative;
+}
+.calls-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+.wrapper {
+    position: relative;
+}
+.left-content h1 {
+
+}
+.text-pre{
+    position: absolute;
+    top: 10%;
+}
+.text-pre h1{
+    font-size: 90px;
+}
+.text-pre p {
+    font-size: 50px;
+}
+.wrapper .left-content, .wrapper .right-content{
+    margin-top: 230px;
+}
+.right-content {
+    padding: 21px 14px;
+}
+.right-content p {
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 14px;
+}
+.right-content h1 {
+    font-size: 24px;
+    line-height: 20px;
+}
+.right-content img {
+    margin-top: 13px;
+    width: 70%;
+}
+.right-content button {
+    display: block;
+    margin: 4px auto 0 auto;
+    padding: 9px 34px;
+}
+
+}
+
+@media(max-width: 1175px){
+    .logo-wrapper{
+        display: inline-block;
+    }
+    .logo-wrapper .itm{
+        margin-left: 0;
+    }
+    .call button{
+        font-size: 13px;
+    }
+    .buttons button{
+    width: 130px;
+    padding: 3px 9px;
+    font-size: 13px;
+    }
+    .right-content h1 {
+        font-size: 23px;
+        line-height: 26px;
+    }
+    .right-content p {
+        font-size: 14px;
+        line-height: 19px;
+        margin-top: 12px;
+    }
+    .right-content img {
+        width: 85%;
+        margin-top: 27px;
+    }
+
+    .card-wrapper{
+        display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    }
+    .card-box ul li a {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .card-box .steps {
+        margin: 32px 47px;
+    }
+}
+
+@media (max-width: 1100px){
+    .Home-pages p {
+        font-size: 39px;
+        line-height: 50px;
+
+    }
+}
+
+
+@media (max-width: 992px){
+    .container{
+        padding: 24px 48px 21px 34px;
+    }
+    .wrapper{
+        padding: 40px 45px;
+    }
+    .logo-wrapper{
+        font-size: 12px;
+        line-height: 13px;
+    }
+    .logo-wrapper img{
+        width: 60%;
+    }
+    .call button{
+        padding: 12px 12px;
+        font-size: 10px;
+    }
+    .call-number span{
+        font-size: 10px;
+    }
+
+    .text-pre h1 {
+        font-size: 70px;
+    }
+    .text-pre p {
+    top: 20%;
+    font-size: 50px;
+    }
+
+.left-content >span {
+    font-size: 15px;
+    line-height: 18px;
+}
+.box-top p {
+    font-size: 36px;
+}
+.card-box .steps {
+    margin: 10px;
+}
+.card-box .steps h5 {
+    font-size: 17px;
+}
+}
+
+@media (max-width: 800px) {
+    .suggestions .sugg--work {
+        font-size: 13px; 
+        width: 40%;
+        padding: 20px 17px;
+    }
+    .buttons span {
+        margin-left: 5px;
+    }
+    .local-net{
+        font-size: 12px;
+    line-height: 10px;
+    }
+    .buttons button{
+        padding: 3px 8px;
+    }
+}
+
+@media(max-width: 730px) {
+    .buttons button {
+        width: 108px;
+    }
+    .container {
+        padding: 24px 20px 21px 20px;
+    }
+    .card-box .box-top {
+        padding: 25px;
+    }
+
+}
+
+@media(max-width: 780px) {
+    .card-box{
+        /* width: 50% !important; */
+    }
+}
+@media (max-width: 660px) {
+    .buttons button, .call button,  .local-net p{
+        display: none;
+    }
+  .buttons a{
+        display: flex;
+        margin: 0 10px;
+    } 
+
+    .wrapper .left-content, .wrapper .right-content {
+        margin-top: 170px;
+    }
+    .text-pre p {
+        line-height: 29px;
+        font-size: 36px;
+    }
+    .text-pre h1{
+        font-size: 50px;
+    }
+   
+}
+
+
+@media (max-width: 620px) {
+    .right-content {
+        display: none;
+    }
+    .left-content{
+        width: 100%;
+    }
+    .left-content .suggestions {
+        justify-content: space-evenly;
+    }
+    .left-content >button{
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 530px){
+    .calls-wrap{
+        flex-direction: column-reverse;
+    }
+
+    .logo-wrapper{
+        width: 50%;
+    }
+    .wrapper {
+        padding: 20px 20px;
+    }
+
+    /* .card-box{
+        width: 70% !important;
+    } */
+
+
+}
+@media(max-width: 458px) {
+  
+    .text-pre h1 {
+        font-size: 42px;
+    } 
+    .text-pre p {
+        line-height: 25px;
+        font-size: 29px;
+    }
+    .call-number {
+        width: 121px;
+    }
+    .card-box ul li a {
+        font-size: 14px;
+    }
+    .card-box .steps h5 {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 390px) {
+    .text-pre h1 {
+        font-size: 32px;
+    } 
+    .text-pre p {
+        line-height: 23px;
+        font-size: 24px;
+    }
+    .box-top >img{
+        width: 8%;
+    }
+}

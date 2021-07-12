@@ -1,0 +1,181 @@
+.contact-wrapper{
+    padding: 70px 150px;
+    background-image: url("../../assets/images/contact-img.png");
+}
+.contact-wrapper h1{
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+}
+
+.contact-wrapper .contact-wrap{
+    margin-top: 45px;
+    display: flex;
+}
+.contact-wrap .contact-left-card{
+    padding: 60px 40px 40px 40px;
+    margin-right: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    width: 50%;
+}
+.contact-left-card h1{
+    text-align: start;
+}
+.contact-left-card p{
+    margin-top: 29px;
+    font-size: 20px;
+    line-height: 150%;
+}
+.contact-left-card textarea{
+    margin-top: 35px;
+    width: 100%;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.33);
+    box-shadow: inset 1px 1px 12px rgba(0, 0, 0, 0.19);
+    outline: none;
+    border: none;
+    padding: 12px 14px;
+    font-size: 14px;
+line-height: 174.69%;
+}
+.contact-left-card input{
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.33);
+    box-shadow: inset 1px 1px 12px rgba(0, 0, 0, 0.19);
+    outline: none;
+    border: none;
+    padding: 12px 14px;
+    font-size: 14px;
+line-height: 174.69%;
+}
+.contact-left-card button{
+    margin-top: 35px;
+}
+
+.contact-wrap .contact-right-card{
+    padding: 60px 40px 40px 40px;
+    margin-left: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    width: 50%;
+
+}
+.contact-right-card  h1{
+    text-align: start;
+}
+.contact-right-card .location{
+    margin-top: 33px;
+    display: flex;
+    align-items: center;
+}
+.location p{
+    margin-bottom: 0;
+}
+.location img{
+    height: fit-content;
+    margin-right: 19px;
+}
+.location h2{
+    margin-bottom: 0;
+    font-size: 36px;
+    line-height: 42px;
+}
+.location span{
+    margin-top: 16px;
+
+}
+.buttons.btn button{
+    margin-top: 35px;
+    border: 1px solid lightgray;
+    color: var(--color-black);
+    background-color: white;
+}
+.contact-right-card button{
+    margin-top: 47px;
+}
+
+@media(max-width: 1150px) {
+    .contact-wrapper h1 {
+        font-size: 36px;
+        line-height: 20px;
+    }
+}
+
+@media(max-width: 1000px){
+    .contact-wrapper h1 {
+          line-height: 39px;
+    }
+   .contact-wrapper .contact-wrap{
+        display: block;
+    }
+    .contact-wrap .contact-left-card, .contact-wrap .contact-right-card {
+        width: 70%;
+        display: block;
+        margin: 30px auto;
+    }
+    .location h2 {
+        font-size: 24px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 800px){
+    .contact-wrap .contact-left-card, .contact-wrap .contact-right-card {
+        width: 100%;
+    }
+    .contact-left-card textarea, .contact-left-card input {
+        width: 90%;
+    }
+}
+
+@media(max-width: 620px) {
+    .contact-wrapper {
+        padding: 20px 20px;
+     }
+     .contact-wrapper .contact-left-card, .contact-wrapper .contact-right-card{
+         width: 75%;
+     }
+
+}
+@media(max-width: 540px) {
+    .contact-wrapper h1 {
+        font-size: 30px;
+    }
+    .contact-left-card p {
+        margin-top: 12px;
+        font-size: 17px;
+        line-height: 144%;
+    }
+    .contact-left-card button {
+        margin-top: 22px;
+        padding: 9px 15px;
+    }
+    .bg__gold{
+        padding: 9px 15px;
+    }
+    
+}
+
+
+@media(max-width: 450px){
+    .contact-wrapper .contact-left-card, .contact-wrapper .contact-right-card{
+        padding: 30px;
+    }
+    .contact-wrapper h1 {
+        font-size: 25px;
+    }
+    .contact-left-card p {
+        margin-top: 11px;
+        font-size: 16px;
+        line-height: 120%;
+    }
+    .location span {
+        margin-top: 4px;
+        font-size: 13px;
+    }
+    .location h2 {
+        font-size: 17px;
+        line-height: 10px;
+    }
+}

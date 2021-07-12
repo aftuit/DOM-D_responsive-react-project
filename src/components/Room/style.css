@@ -1,0 +1,68 @@
+
+.room-content{
+    margin-top: 100px;
+}
+
+.room-content >p{
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #1E0801;
+}
+.room-content .room-styles{
+    width: 100%;
+    display: flex;
+    margin-top: 56px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.roomIMG {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+    margin-top: 1px;
+}
+
+.roomIMG >img{
+    width: 100%;
+}
+
+
+.roomIMG .cell{
+    position: absolute;
+    width: fit-content;
+    z-index: 10;
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+    .room-content >p {
+        font-size: 34px;
+        line-height: 46px;
+}
+
+}
+
+@media (max-width: 520px) {
+    .room-content >p {
+        font-size: 26px;
+        line-height: 35px;
+    }
+    .room-styles{
+        flex-wrap: nowrap !important;
+        overflow-x: scroll;
+    }
+    .roomIMG{
+        flex-shrink: 0;
+        width:auto;
+    }
+    .room-content >p {
+        font-size: 19px;
+        line-height: 26px;
+    }
+}

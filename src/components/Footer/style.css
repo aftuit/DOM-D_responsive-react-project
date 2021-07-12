@@ -1,0 +1,149 @@
+.footer{
+    background-color: var(--color-black);
+    padding: 75px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 30px;
+}
+.footer-content-1{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-content-1 .nav-links{
+    margin-left: 20px;
+}
+.footer h5{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 24px;
+    line-height: 28px;
+}
+.nav-links a{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+    display: block;
+}
+.nav-links a:hover{
+    color: rgba(255, 255, 255, 0.8);
+}
+.footer ul li{
+    list-style-type: none;
+}
+.footer ul li:nth-child(2){
+    margin-top: 30px;
+}
+.footer li a{
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-size: 18px;
+line-height: 21px;
+}
+.footer li a:hover{
+    color:  var(--color-main);
+}
+
+li img{
+    margin-right: 19px;
+}
+li span{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    line-height: 31px;
+}
+.social-link h5{
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.social-link{
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+}
+
+.social-link img{
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+@media(max-width: 1290px) {
+    .footer{
+        padding: 50px 45px;
+    }
+    .footer h5 {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 21px;
+        line-height: 22px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .footer-content-1{
+        display: block;
+
+    }
+    .footer-content-1 .nav-links{
+        margin-left: 0;
+    }
+    .footer-content{
+        width: 70%;
+    }
+    .ul-nav{
+        margin-left: 50px;
+    }
+    .nav-links{
+        margin-top: 20px;
+    }
+    .footer >img{
+        width: 16%;
+    }
+}
+@media (max-width: 900px) {
+    li span {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .footer h5 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .social-link{
+        flex-wrap: wrap;
+    }
+
+    .footer li a {
+        font-size: 12px;
+        line-height: 12px;
+    }
+}
+
+@media (max-width: 750px) {
+    .footer{
+        display: block;
+    }
+    .footer-content{
+        display: block;
+        margin-left: 0;
+    }
+    .footer-content-1{
+        display: block;
+    }
+    .ul-nav{
+        margin-left: 0;
+    }
+    .nav-links{
+        margin-top: 20px;
+    }
+}

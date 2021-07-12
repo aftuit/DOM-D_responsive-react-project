@@ -1,0 +1,136 @@
+.Home-pages{
+    padding: 90px 150px;
+}
+.Home-pages p{
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+}
+.card-wrapper{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 43px;
+}
+
+.home-card{
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 74px rgba(39, 17, 10, 0.16);
+    width: 31%;
+    position: relative;
+    margin: 0 10px 30px 10px;
+    padding-bottom: 0;
+    transition: all .2s linear;
+}
+.home-card img{
+    margin-top: 49px;
+    width: 100%;
+}
+.home-card .title-i{
+    margin-top: 44px;
+    margin-left: 32px;
+}
+.title-i h1{
+    height: 76px;
+    font-size: 28px;
+line-height: 33px;
+}
+.title-i button{
+    margin-top: 13px;
+    padding: 11px 30px;
+    background: var(--color-gold);
+}
+.home-card .circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--color-main);
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.home-card:hover {
+    background-color: var(--color-main);
+}
+.home-card:hover .circle{
+    background-color: white;
+}
+.home-card:hover button{
+    background: white !important;
+}
+.home-card:hover button:active{
+    background: whitesmoke;
+}
+
+
+/* @media (max-width: 1175px){
+    .card-wrapper{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+    .card-wrapper .home-card{
+        flex-shrink: 0.01;
+    }
+} */
+@media (max-width: 1000px){
+    
+ }
+
+ @media (max-width: 1175px){
+    .Home-pages {
+        padding: 80px 45px;
+    }
+    .Home-pages p {
+        font-size: 37px;
+        line-height: 43px;
+    }
+    .card-wrapper{
+        justify-content: center;
+    }
+    .card-wrapper .home-card{
+        width: 45%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+ }
+ @media(max-width: 660px){
+    .Home-pages p {
+        font-size: 29px;
+        line-height: 40px;
+    }
+    .home-card .title-i {
+        margin-top: 43px;
+        margin-left: 10px;
+    }
+    .Home-pages {
+        padding: 20px 20px;
+    }
+ }
+ @media(max-width: 576px){
+    .card-wrapper .home-card {
+        width: 50%;
+        flex-shrink: 0;
+    }
+    .card-wrapper{
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        width: 100%;
+    }
+    .Home-pages p {
+        font-size: 26px;
+        line-height: 26px;
+    }
+}
+@media(max-width: 520px) {
+    .title-i button {
+        margin-top: 5px;
+        padding: 8px 13px;
+    }
+    .title-i h1 {
+        height: 61px;
+        font-size: 18px;
+        line-height: 23px;
+    }
+}

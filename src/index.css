@@ -1,13 +1,100 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* ======= Colors ======== */
+
+:root {
+    --color-gold: linear-gradient(180deg, #FFDC83 0%, #FBD26A 25%, #C17024 84.9%, #E3A548 100%);
+    --color-main: #DDA046;
+    --color-black: #1D1A14;
+    --color-light-white: rgba(255, 255, 255, 0.71);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* ======= Fonts ========= */
+
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("/src/assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("/src/assets/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/src/assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+.font-bold {
+  font-family: "Roboto-Bold", "sans-serif";
+}
+.font-medium {
+  font-family: "Roboto-Medium", "sans-serif";
+}
+.font-regular {
+  font-family: "Roboto-Regular", "sans-serif";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+   background-color: #F4F4F4;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ==== COMMON STYLES ======= */
+
+.bg__gold {
+  background: var(--color-gold);
+  padding: 11px 30px;
+  box-shadow: 0px 0px 48px rgba(240, 192, 92, 0.54);
+}
+
+.bg__gold:active {
+background: linear-gradient(0deg, #FFDC83 0%, #FBD26A 25%, #E3A548 100%);
+}
+
+.text-gold {
+  color: var(--color-gold);
+}
+
+.bg-main {
+  background-color: var(--color-main);
+}
+
+.text-main {
+  color: var(--color-main);
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 3px grey;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--color-main);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #cf8f2e;
+}
+
